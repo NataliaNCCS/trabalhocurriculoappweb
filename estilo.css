@@ -1,0 +1,115 @@
+/* Estilo geral do corpo da página */
+body {
+    font-family:'Century Gothic', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9e4d7;
+    color: #394121;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    background-color: #394121;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo dos links na navbar */
+.navbar a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #394121;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #394121;
+    background-color: #e9e4d7;
+}
+
+/* Estilo dos links na navbar ao passar o mouse */
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+/* Estilo do container principal */
+.container {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fef4ec;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Seções inicialmente ocultas, exceto home */
+section {
+    display: none;
+}
+
+#home {
+    display: block;
+}
+
+/* Estilo das listas não ordenadas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo das sublistas */
+ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+textarea {
+    width: calc(100% - 22px);
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo do botão de envio */
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

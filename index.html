@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        // Função para mostrar a seção selecionada e esconder as outras
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+
+        // Exibe a seção 'home' quando o documento é carregado
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home');
+        });
+    </script>
+</head>
+<body>
+    <!-- Barra de navegação com links para diferentes seções do site -->
+    <div class="navbar">
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('sobre-mim')">Sobre mim</a>
+        <a href="#" onclick="showSection('informacoes-profissionais')">Informações profissionais</a>
+        <a href="#" onclick="showSection('entre-em-contato')">Entre em contato</a>
+        <a href="https://natalianccs.github.io/sitetindog/" target="_blank">Projeto Tindog</a>
+    </div>
+
+    <div class="container">
+        <section id="home">
+            <h2>Bem-vindo à minha página!</h2>
+            <p>Clique nos links acima para navegar pelas diferentes seções do site.</p>
+        </section>
+
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Olá!</p>
+
+            <p>Eu sou a Natália Campos, tenho 23 anos e moro em Taubaté - SP.</p>
+            
+            <p>Sou apaixonada por Tecnologia, História, Rock britânico e Senhor dos Aneis.</p>
+            
+            <p>Fui criada pela minha mãe e minha tia, com quem eu vivi até meus 19 anos.</p>
+            <p>Atualmente, eu moro sozinha, estou noiva do meu melhor amigo e tenho uma gatinha linda chamada Paçoca.</p>
+        </section>
+
+        <section id="informacoes-profissionais">
+            <h2>Informações profissionais</h2>
+            <p>Após 2 anos e meio como professora da língua inglesa em curso livre, fui aprovada dentre 20 mil candidatos para trabalhar como Analista de Sistemas Trainee no Banco Safra, acompanhado de um curso de treinamento em Desenvolvimento Web Full Stack de 600 horas pela Let's Code - AdaTech. 
+
+            Atuei também como Desenvolvedora .NET por um ano e meio em uma software house.
+            
+            Atualmente curso Engenharia de Software pela UNINTER e ministro aulas de conversação em inglês.</p>
+            
+            <ul>
+                <li><strong>Professora de inglês para conversação, Autônomo - jan/2024 - atualmente</strong>
+                    <ul>
+                        <li>Atuo como professora de inglês autônoma via Meets, especializada em aulas de conversação, visando o aprimoramento da fluência e compreensão oral dos alunos. Técnicas interativas e imersivas para estimular o uso prático do idioma em diversas situações do cotidiano.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><strong>Desenvolvedora .NET Júnior, Gsoft do Brasil Sistemas - jun/2023 - atualmente</strong>
+                    <ul>
+                        <li>Responsável pelo desenvolvimento back-end, especializada em tecnologias .NET, EF Core, PostgreSQL, Liquibase, Docker, com implementação de REST APIs e Xunit para testagem. Tenho contato diário com metodologias ágeis, como Scrum, e me encarrego da documentação técnica. Possuo uma compreensão introdutória de RDS na AWS.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><strong>Estágio em desenvolvimento back-end, Gsoft do Brasil Sistemas - mar/2023 a mai/2023</strong>
+                    <ul>
+                        <li>Colaborei no desenvolvimento back-end, com ênfase em .NET, PostgreSQL, Liquibase, Docker, EF Core, REST APIs, e Xunit, além de contribuir para a documentação do código.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><strong>Analista de Sistemas Trainee, Banco Safra - jun/2022 a dez/2022</strong>
+                    <ul>
+                        <li>Prestei suporte nas operações de qualidade e monitoramento dos sistemas de internet banking e aplicativos móveis para o segmento corporativo, tendo contato com metodologias ágeis como Scrum e Kanban.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><strong>Instrutora de Inglês, Pró Línguas Escola de Idiomas - jun/2017 a ago/2019</strong>
+                    <ul>
+                        <li>Atuei como instrutora de inglês, elaborando e ministrando aulas interativas para diferentes níveis de proficiência. Fui responsável por criar avaliações e atividades que promoviam a imersão e prática da língua, contribuindo para o avanço linguístico e a confiança dos alunos.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="entre-em-contato">
+            <h2>Entre em contato</h2>
+            <p>
+                <a href="https://github.com/NataliaNCCS" target="_blank">Github</a> |
+                <a href="https://www.linkedin.com/in/naccamposs" target="_blank">Linkedin</a>
+            </p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"><br><br>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50">Digite sua mensagem</textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="projeto-tindog">
+        </section>
+    </div>
+</body>
+</html>
